@@ -1,0 +1,68 @@
+$primary: #4A4A4A;
+
+@import '~bootstrap/scss/bootstrap';
+
+html, body,h1, h2, h3, h4, h5, h6, p, span, b {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    height: 95%;
+}
+
+.card-title-rating {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between
+}
+
+.title {
+    float:left;
+    font-size: 16px;
+}
+
+.rating {
+    text-align: end;
+    font-size: 15px;
+}
+
+.desc {
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: 47px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #888;
+    font-size: 14px
+}
+
+img, svg {
+    width: -webkit-fill-available;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .justify-content-around {
+        width: 60% !important;
+    }
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 35%;
+    }
+    .title {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .justify-content-around {
+        width: 80% !important;
+    }
+    .title {
+        max-width: 100px;
+    }
+}
